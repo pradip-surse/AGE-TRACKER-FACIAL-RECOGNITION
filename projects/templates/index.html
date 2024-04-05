@@ -1,0 +1,91 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age and Gender Detection Project</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        #container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: left;
+            max-width: 600px;
+            width: 100%;
+        }
+
+        #info {
+            margin-top: 20px;
+            font-size: 18px;
+        }
+
+        #button {
+            background-color: #4caf50;
+            color: #fff;
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        #button:hover {
+            background-color: #45a049;
+        }
+
+        #output {
+            margin-top: 20px;
+            white-space: pre-line;
+            font-family: monospace;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>Age and Gender Detection Project</h1>
+        <div id="info">
+            <p>This project uses computer vision to perform age and gender detection in real-time using OpenCV and pre-trained models.</p>
+            <p>Click the button below to run and view the Python code output:</p>
+        </div>
+        <button id="button" onclick="runPythonCode()">Click Here</button>
+        <pre id="output"></pre>
+    </div>
+
+    <script>
+        function runPythonCode() {
+            fetch('/run_python')
+                .then(response => response.text())
+                .then(output => {
+                    document.getElementById('output').textContent = output;
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                });
+        }
+    </script>
+</body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age-Gender Detection</title>
+</head>
+<body>
+    <img src="{{ url_for('video_feed') }}" style="width:100%;">
+</body>
+</html>
